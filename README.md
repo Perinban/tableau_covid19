@@ -1,50 +1,36 @@
-# COVID-19 Visual Report Analysis
+# COVID-19 Tableau Dashboard
 
-This repository contains a detailed visual report analysis of COVID-19 cases, recovery rates, and death percentages across different countries and continents. The data visualizations provide insights into the distribution and impact of COVID-19 globally.
+Historical Tableau analysis of COVID-19 case data using a daily snapshot from **April 17, 2020**. The project explores confirmed cases, deaths, recoveries, active cases, and geographic distribution across countries and continents.
 
-## Visualizations
+## Dashboard Focus
 
-### Top 10 COVID-19 Cases by Country
-![Top 10 COVID-19 Cases by Country](Image placed in VisualReport.pdf)
+- Country-level confirmed case comparisons
+- Recovery and mortality metrics
+- Continent-level aggregation
+- Active-case heat maps
+- Geographic distribution on a world map
+- Supporting tabular views for country and continent analysis
 
-This bar chart shows the total number of COVID-19 cases in the top 10 affected countries. The countries included are Germany, Russia, India, Australia, Indonesia, Serbia, Ukraine, Algeria, Hungary, and Kuwait.
+## Repository Contents
 
-### Recovery Rate Trend by Country
-![Recovery Rate Trend by Country](Image placed in VisualReport.pdf)
+| Path | Purpose |
+| --- | --- |
+| `04-17-2020.csv` | Historical COVID-19 daily data snapshot used by the workbook |
+| `Continent_Country_Mapping.xlsx` | Country-to-continent mapping used for aggregation |
+| `COVID_19.twbx` | Packaged Tableau workbook with embedded project data |
+| `Visual Report.pdf` | Exported visual report |
 
-This line plot illustrates the trend of recovery rates for the selected countries over time.
+## Tools
 
-### Percentage of Total Deaths by Continent
-![Percentage of Total Deaths by Continent](Image placed in VisualReport.pdf)
+- Tableau
+- CSV data preparation
+- Excel-based reference mapping
+- Geographic and categorical data visualization
 
-A pie chart depicting the percentage of total deaths due to COVID-19 by continent. The data shows:
-- Europe: 73.46%
-- Asia: 19.89%
-- Africa: 5.64%
-- Oceania: 1.02%
+## Reproducibility
 
-### Tabular COVID-19 Data by Continent and Country
-![Tabular COVID-19 Data by Continent and Country](Image placed in VisualReport.pdf)
+Open `COVID_19.twbx` in Tableau Desktop or Tableau Public. The packaged workbook contains the same CSV and mapping workbook included in this repository.
 
-A table summarizing the active cases, deaths, recovered cases, and total cases for the selected countries, broken down by continent.
+## Historical Context
 
-### Active Cases Heat Map
-![Active Cases Heat Map](Image placed in VisualReport.pdf)
-
-A heat map representing the sum of active COVID-19 cases by continent.
-
-### World Map of Total Cases
-![World Map of Total Cases](Image placed in VisualReport.pdf)
-
-A world map visualization showing the total number of COVID-19 cases by country. The color and size indicate the sum of total cases, highlighting the most affected regions.
-
-## Summary
-
-- **Europe** has the highest percentage of total deaths at 73.46%.
-- **Asia** follows with 19.89% of total deaths.
-- **Africa** accounts for 5.64% of total deaths.
-- **Oceania** has the lowest percentage of total deaths at 1.02%.
-
-## Data Source
-
-The data used for these visualizations is filtered to include multiple selected country regions.
+This repository is a **static historical analysis**, not a live COVID-19 tracker. Values represent the project dataset as of April 17, 2020 and should not be interpreted as current public-health statistics.
